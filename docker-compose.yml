@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  cats:
+    build: .
+    volumes:
+      - ./cats.conf:/cats/cats.conf
+      - ./output:/cats/output/
+    command: /cats/start_cats.sh
